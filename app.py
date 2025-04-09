@@ -66,7 +66,7 @@ def display_metrics(metrics):
                 st.metric("Keyword Difficulty", metrics['keyword_difficulty'])
             
             # Add more metrics here as needed
-            st.progress(min(int(metrics.get('keyword_difficulty', 0)), 100)
+            st.progress(min(int(metrics.get('keyword_difficulty', 0)), 100))
         else:
             st.error(f"❌ Failed to analyze: {metrics['error']}")
 
